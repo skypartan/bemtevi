@@ -146,7 +146,7 @@ async fn play_audio(ctx: &Context, state: &VoiceState) {
     if let Some(handler_lock) = manager.get(guild_id) {
         let mut handler = handler_lock.lock().await;
 
-        match songbird::ffmpeg("res/audio.wav").await {
+        match songbird::ffmpeg("./res/audio.wav").await {
             Ok(source) => {
                 let _ = handler.play_source(source);
             }

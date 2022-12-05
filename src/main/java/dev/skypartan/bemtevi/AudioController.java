@@ -26,7 +26,7 @@ public class AudioController {
     public static final String O_KAWAII_KOTO = "bemtevi-estourado.mp3";
 
     @NonNull private final Program bot;
-    @Getter private DefaultAudioPlayerManager audioPlayerManager;
+    @Getter private final DefaultAudioPlayerManager audioPlayerManager;
 
     private final Random random = new Random();
     private AudioPlayer player;
